@@ -1,3 +1,12 @@
+<script setup>
+// import { ref } from "vue";
+import CharacterCards from "@/components/CharacterCards.vue";
+defineProps({
+  msg: String,
+});
+// const ids = ref([99]);
+</script>
+
 <template>
   <div>
     <h1 class="p-8 text-4xl text-center">
@@ -6,21 +15,3 @@
     <CharacterCards />
   </div>
 </template>
-
-<script>
-import CharacterCards from "@/components/CharacterCards.vue";
-export default {
-  name: "HelloWorld",
-  components: {
-    CharacterCards,
-  },
-  props: {
-    msg: String,
-  },
-  data() {
-    return {
-      ids: [99],
-    };
-  },
-};
-</script>

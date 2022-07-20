@@ -1,16 +1,10 @@
+<script setup>
+import VideoPlayer from "@/components/VideoPlayer.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
+</script>
 <template>
   <div id="app">
-    <HelloWorld msg="Rick & Morty Characters" />
+    <VideoPlayer src="./public/Dog on the beach.mp4" />
+    <HelloWorld msg="Monti Chracters" />
   </div>
 </template>
-
-<script>
-import HelloWorld from "@/components/HelloWorld.vue";
-
-export default {
-  name: "app",
-  components: {
-    HelloWorld,
-  },
-};
-</script>
